@@ -1,6 +1,6 @@
 import java.util.Random;
 
-//we are making a minesweer model btw
+
 public class Model {
     private int rows;
     private int cols;
