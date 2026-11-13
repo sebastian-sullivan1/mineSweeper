@@ -73,7 +73,7 @@ public class SolverGUI extends JFrame {
             try{
             Thread.sleep(10000);
             }catch(InterruptedException e){
-                System.out.println("Sleeping for 30 seconds");
+                System.out.println("Sleeping for seconds");
             }
         }
         return holdingOutPut;
