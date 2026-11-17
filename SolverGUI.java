@@ -62,9 +62,12 @@ public class SolverGUI extends JFrame {
                     try{
                     holdingOutPut[i][j]=Integer.parseInt(gridCells[i][j].getText().trim());
                     }catch (Exception e) {}
+                }else{
+                    holdingOutPut[i][j]=10;
                 }
             }
         }
+        cellTouched=new boolean[gridCells.length][gridCells[0].length];
         set=true;
     }
 
@@ -77,8 +80,8 @@ public class SolverGUI extends JFrame {
             }
         }
         return holdingOutPut;
-
     }
+    
     private void generateGrid() {
         try {
             int n = Integer.parseInt(sizeInput.getText().trim());
@@ -141,8 +144,7 @@ public class SolverGUI extends JFrame {
                 gridCells[r][c].setBackground(Color.WHITE);
             }
         }
-
-        Point target = Run.findCoords(board); 
+        Point target = Run.findCoords(board);
 
         if (target == null) {
             statusLabel.setText("No target coordinates found.");
