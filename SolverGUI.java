@@ -63,7 +63,7 @@ public class SolverGUI extends JFrame {
                     holdingOutPut[i][j]=Integer.parseInt(gridCells[i][j].getText().trim());
                     }catch (Exception e) {}
                 }else{
-                    holdingOutPut[i][j]=10;
+                    holdingOutPut[i][j]=9;
                 }
             }
         }
